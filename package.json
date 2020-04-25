@@ -1,0 +1,33 @@
+{
+	"name": "dockerComposeTest",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"build": "webpack",
+		"start:dev": "webpack-dev-server --mode development --open --hot --host 0.0.0.0",
+		"start:prod": "node src/server.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/jonlo/CollisionEngine.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/jonlo/CollisionEngine/issues"
+	},
+	"homepage": "https://github.com/jonlo/CollisionEngine#readme",
+	"devDependencies": {
+		"copy-webpack-plugin": "^4.5.1",
+		"css-loader": "^0.28.7",
+		"serialize-javascript": ">=2.1.1",
+		"webpack": "^4.41.3",
+		"webpack-cli": "^3.3.10",
+		"webpack-dev-server": "^3.1.3"
+	},
+	"dependencies": {
+		"express": "^4.17.1"
+	}
+}

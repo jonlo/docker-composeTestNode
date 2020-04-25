@@ -1,0 +1,16 @@
+# Dockerfile for dev
+FROM node:12
+WORKDIR /app
+COPY . /app 
+COPY .npmrc app/  
+COPY package.json /app
+RUN npm install
+RUN rm -f .npmrc
+### for production
+RUN npm run build
+CMD npm run start:prod
+###
+### for development
+# CMD npm run start:dev
+###
+EXPOSE 8080
